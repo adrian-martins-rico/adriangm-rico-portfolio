@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adrián Alfredo Martins Rico - QA Analyst Portfolio</title>
+    <!-- CORRECCIÓN: Base tag para GitHub Pages subdirectorio -->
+    <base href="./">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -52,6 +54,7 @@
         </div>
     </section>
 
+    <!-- Resto del contenido tal como lo creamos antes -->
     <!-- Sección "Qué ofrezco" -->
     <section class="offer-section" id="ofrezco">
         <div class="section-header">
@@ -60,7 +63,30 @@
             <p>Basado en mi experiencia profesional real</p>
         </div>
         <div class="offer-grid">
-            <!-- Tarjetas se poblarán en ETAPA 3 -->
+            <div class="offer-card">
+                <h3>Pruebas Funcionales</h3>
+                <p>Validación de procesos y funcionalidades completas de software</p>
+            </div>
+            <div class="offer-card">
+                <h3>Pruebas E2E e Integración</h3>
+                <p>Testing de procesos punta a punta y validación de integraciones</p>
+            </div>
+            <div class="offer-card">
+                <h3>Testing Exploratorio</h3>
+                <p>Detección de defectos fuera de casos de prueba estructurados</p>
+            </div>
+            <div class="offer-card">
+                <h3>Testing Web y Mobile</h3>
+                <p>Validación en diferentes navegadores y dispositivos</p>
+            </div>
+            <div class="offer-card">
+                <h3>Testing de APIs</h3>
+                <p>Validación de REST, SOAP con Postman y SoapUI</p>
+            </div>
+            <div class="offer-card">
+                <h3>Gestión de Defectos</h3>
+                <p>Seguimiento y reporte en Jira, Xray y Mantis</p>
+            </div>
         </div>
     </section>
 
@@ -93,98 +119,42 @@
             <h2>Mis habilidades y herramientas</h2>
         </div>
         <div class="skills-grid">
-            <!-- Agruparemos habilidades por categorías -->
-        </div>
-    </section>
-
-    <!-- Sección Proceso -->
-    <section class="process-section" id="proceso">
-        <div class="section-header">
-            <span class="section-badge">Proceso</span>
-            <h2>Mi flujo de trabajo</h2>
-        </div>
-        <div class="process-grid">
-            <!-- Pasos numerados -->
-        </div>
-    </section>
-
-    <!-- Sección Proyectos -->
-    <section class="projects-section" id="proyectos">
-        <div class="section-header">
-            <span class="section-badge">Proyectos</span>
-            <h2>Proyectos en los que participé</h2>
-        </div>
-        <div class="projects-grid">
-            <!-- Tarjetas de proyectos reales -->
-        </div>
-    </section>
-
-    <!-- Sección Experiencia Profesional -->
-    <section class="experience-section" id="experiencia">
-        <div class="section-header">
-            <span class="section-badge">Experiencia</span>
-            <h2>Mi trayectoria profesional</h2>
-        </div>
-        <div class="timeline">
-            <!-- Línea de tiempo con experiencias -->
-        </div>
-    </section>
-
-    <!-- Sección Formación -->
-    <section class="education-section" id="formacion">
-        <div class="section-header">
-            <span class="section-badge">Formación</span>
-            <h2>Formación académica y cursos</h2>
-        </div>
-        <div class="education-grid">
-            <!-- Tarjetas de formación -->
-        </div>
-    </section>
-
-    <!-- Idiomas -->
-    <section class="languages-section">
-        <div class="section-header">
-            <span class="section-badge">Idiomas</span>
-            <h2>Idiomas</h2>
-        </div>
-        <div class="language-item">
-            <span>Inglés</span>
-            <span>Básico (lectura técnica)</span>
-        </div>
-    </section>
-
-    <!-- Contacto -->
-    <section class="contact-section" id="contacto">
-        <div class="section-header">
-            <span class="section-badge">Contacto</span>
-            <h2>Contacto</h2>
-        </div>
-        <div class="contact-info">
-            <div class="contact-item">
-                <span>Email:</span> adrian.m.rico85@gmail.com
+            <div class="skill-category">
+                <h3>TESTING</h3>
+                <ul>
+                    <li>Funcional</li>
+                    <li>E2E</li>
+                    <li>Integración</li>
+                    <li>Regresión</li>
+                    <li>Smoke</li>
+                    <li>Exploratorio</li>
+                    <li>UAT</li>
+                    <li>Caja negra</li>
+                    <li>Cross-Browser</li>
+                    <li>Web</li>
+                    <li>Mobile</li>
+                </ul>
             </div>
-            <div class="contact-item">
-                <span>Teléfono:</span> +54 9 11 3394 5326
+            <div class="skill-category">
+                <h3>API / BACKEND</h3>
+                <ul>
+                    <li>Postman</li>
+                    <li>REST</li>
+                    <li>SOAP</li>
+                    <li>SoapUI</li>
+                </ul>
             </div>
-            <div class="contact-item">
-                <span>Ubicación:</span> Buenos Aires, Argentina
+            <div class="skill-category">
+                <h3>DATOS</h3>
+                <ul>
+                    <li>SQL Server</li>
+                    <li>Oracle</li>
+                    <li>MySQL</li>
+                </ul>
             </div>
-            <div class="contact-item">
-                <span>LinkedIn:</span> linkedin.com/in/adrián-alfredo-martins-rico-a62b1476
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">AMR QA</div>
-            <p>Adrián Alfredo Martins Rico</p>
-            <p>QA Analyst | QA Functional Tester</p>
-            <p>&copy; 2024 Adrián Alfredo Martins Rico. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="scripts/main.js"></script>
-</body>
-</html>
+            <div class="skill-category">
+                <h3>AUTOMATIZACIÓN</h3>
+                <ul>
+                    <li>Playwright</li>
+                    <li>Selenium WebDriver</li>
+                    <|end|>
