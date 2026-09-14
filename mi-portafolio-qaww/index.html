@@ -4,100 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adrián Alfredo Martins Rico - QA Analyst Portfolio</title>
-    <!-- Base tag ESPECIAL para GitHub Pages en subdirectorios -->
+    <!-- Base tag para GitHub Pages subdirectorio -->
     <base href="./">
-    <link rel="stylesheet" href="main.css">
 </head>
-<body>
-    <!-- Header/Navegación -->
-    <header class="header">
-        <div class="logo">AMR QA</div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#inicio" class="active">Inicio</a></li>
-                <li><a href="#ofrezco">Qué ofrezco</a></li>
-                <li><a href="#enfoque">Mi enfoque</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proceso">Proceso</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#formacion">Formación</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+<body style="margin:0; font-family: system-ui, sans-serif; background: #0a0a0f; color: #e0e0e0; min-height: 100vh;">
+    
+    <!-- Header fijo -->
+    <header style="position: fixed; top: 0; width: 100%; background: rgba(10, 10, 15, 0.95); backdrop-filter: blur(10px); padding: 1rem 2rem; color: #e0e0e0; z-index: 1000; display: flex; justify-content: space-between; align-items: container;">
+        <div style="font-weight: bold; color: #00d4aa; font-size: 1.5rem;">AMR QA</div>
+        <nav style="display: none;"> <!-- Menú oculto por ahora, funcional si querés reactivarlo después -->
+            <ul style="list-style: none; margin: 0; padding: 0;">
+                <li style="display: inline; margin-left: 2rem;"><a href="#inicio" style="color: #a0a0a0; text-decoration: none;">Inicio</a></li>
+                <li style="display: inline; margin-left: 2rem;"><a href="#ofrezco" style="color: #a0a0a0; text-decoration: none;">Qué ofrezco</a></li>
             </ul>
         </nav>
-        <div class="header-actions">
-            <a href="#" id="download-cv" class="btn-download">Descargar CV</a>
-            <a href="https://linkedin.com/in/adrián-alfredo-martins-rico-a62b1476" target="_blank" class="btn-linkedin">LinkedIn</a>
-            <a href="#contacto" class="btn-theme">Tema</a>
-            <a href="#inicio" class="lang-en">EN</a>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <a href="https://linkedin.com/in/adrián-alfredo-martins-rico-a62b1476" target="_blank" style="color: #0077b5; text-decoration: none;">LinkedIn</a>
+            <a href="#inicio" style="color: #a0d4aa; text-decoration: none;">EN</a>
         </div>
     </header>
 
-    <!-- Hero / Portada -->
-    <section class="hero" id="inicio">
-        <div class="hero-content">
-            <span class="badge">QA Analyst</span>
-            <h1>Adrián Alfredo Martins Rico</h1>
-            <h2>QA Analyst | QA Functional Tester | Manual QA | API | Web | Mobile</h2>
-            <p>Professional with over 8 years of experience in software quality, participating in banking, payment methods, insurance, retail and energy projects.</p>
-            <div class="hero-buttons">
-                <a href="#ofrezco" class="btn btn-primary">Ver lo que ofrezco</a>
-                <a href="#contacto" class="btn btn-secondary">Contactarme</a>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="qa-card">
-                <div class="qa-icon">QA</div>
-                <h3>Quality Assurance</h3>
-                <p>Validación de procesos E2E</p>
+    <!-- Hero principal -->
+    <section style="padding-top: 80px; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+        <div style="max-width: 800px;">
+            <span style="display: inline-block; background: #00d4aa; color: #0a0a0f; padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.8rem; margin-bottom: 1rem;">QA Analyst</span>
+            <h1 style="font-size: 2.5rem; color: #e0e0e0; margin-bottom: 1rem;">Adrián Alfredo Martins Rico</h1>
+            <p style="font-size: 1rem; color: #a0a0a0; margin-bottom: 1.5rem;">Professional with over 8 years of experience in software quality, participating in banking, payment methods, insurance, retail and energy projects.</p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="#ofrezco" style="background: #00d4aa; color: #0a0a0f; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 4px; font-weight: bold;">Ver lo que ofrezco</a>
+                <a href="#contacto" style="background: #1a1a24; color: #a0a0a0; padding: 0.8rem 1.5rem; text-decoration: none; border: 1px solid #333; border-radius: 4px;">Contactarme</a>
             </div>
         </div>
     </section>
 
     <!-- Sección "Qué ofrezco" -->
-    <section class="offer-section" id="ofrezco">
-        <div class="section-header">
-            <span class="section-badge">Qué ofrezco</span>
-            <h2>Mis áreas de especialización</h2>
-            <p>Basado en mi experiencia profesional real</p>
-        </div>
-        <div class="offer-grid">
-            <div class="offer-card">
-                <h3>Pruebas Funcionales</h3>
-                <p>Validación de procesos y funcionalidades completas de software</p>
-            </div>
-            <div class="offer-card">
-                <h3>Pruebas E2E e Integración</h3>
-                <p>Testing de procesos punta a punta y validación de integraciones</p>
-            </div>
-            <div class="offer-card">
-                <h3>Testing Exploratorio</h3>
-                <p>Detección de defectos fuera de casos de prueba estructurados</p>
-            </div>
-            <div class="offer-card">
-                <h3>Testing Web y Mobile</h3>
-                <p>Validación en diferentes navegadores y dispositivos</p>
-            </div>
-            <div class="offer-card">
-                <h3>Testing de APIs</h3>
-                <p>Validación de REST, SOAP con Postman y SoapUI</p>
-            </div>
-            <div class="offer-card">
-                <h3>Gestión de Defectos</h3>
-                <p>Seguimiento y reporte en Jira, Xray y Mantis</p>
+    <section id="ofrezco" style="padding: 3rem 1rem; max-width: 1200px; margin: 0 auto;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="color: #00d4aa; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-bottom: 1rem;">Mis áreas de especialización</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                <div style="background: #12121c; padding: 1rem; border-radius: 8; border: 1px solid #2a2a3a;">
+                    <h3 style="color: #00d4aa; margin: 0 0 0.5rem 0;">Pruebas Funcionales</h3>
+                    <p style="color: #a0a0a0; font-size: 0.9rem; margin: 0;">Validación de procesos y funcionalidades completas de software</p>
+                </div>
+                <div style="background: #12121c; padding: 1rem; border-radius: 8; border: 1px solid #2a2a3a;">
+                    <h3 style="color: #00d4aa; margin: 0 0 0.5rem 0;">Pruebas E2E e Integración</h3>
+                    <p style="color: #a0a0a0; font-size: 0.9rem; margin: 0;">Testing de procesos punta a punta y validación de integraciones</p>
+                </div>
+                <div style="background: #12121c; padding: 1rem; border-radius: 8; border: 1px solid #2a2a3a;">
+                    <h3 style="color: #00d4aa; margin: 0 0 0.5rem 0;">Testing Web y Mobile</h3>
+                    <p style="color: #a0a0a0; font-size: 0.9rem; margin: 0;">Validación en diferentes navegadores y dispositivos</p>
+                </div>
+                <div style="background: #12121c; padding: 1rem; border-radius: 8; border: 1px solid #2a2a3a;">
+                    <h3 style="color: #00d4aa; margin: 0 0 0.5rem 0;">Testing de APIs</h3>
+                    <p style="color: #a0a0a0; font-size: 0.9rem; margin: 0;">Validación de REST, SOAP con Postman y SoapUI</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección "Mi enfoque de calidad" -->
-    <section class="approach-section" id="enfoque">
-        <div class="section-header">
-            <span class="section-badge">Mi enfoque de calidad</span>
-            <h2>Cómo trabajo la calidad</h2>
-        </div>
-        <div class="approach-content">
-            <p>Basado en mi experiencia real en QA:</p>
-            <ul>
+    <!-- Sección "Mi enfoque" -->
+    <section id="enfoque" style="padding: 3rem 1rem; max-width: 1200px; margin: 0 auto; background: #12121c;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 style="color: #00d4aa; border-bottom: 2px solid #333; padding-bottom: 0.5rem;">Cómo trabajo la calidad</h2>
+            <ul style="color: #a0a0a0; line-height: 1.8;">
                 <li>Análisis de requerimientos y identificación de riesgos</li>
                 <li>Diseño de escenarios y casos de prueba completos</li>
                 <li>Ejecución de pruebas funcionales, regresión y smoke testing</li>
@@ -105,88 +74,20 @@
         </div>
     </section>
 
-    <!-- Sección Habilidades simplificada -->
-    <section class="skills-section" id="habilidades">
-        <div class="section-header">
-            <span class="section-badge">Habilidades</span>
-            <h2>Mis habilidades y herramientas</h2>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>TESTING</h3>
-                <ul>
-                    <li>Funcional</li>
-                    <li>E2E</li>
-                    <li>Integración</li>
-                    <li>Regresión</li>
-                    <li>Smoke</li>
-                    <li>Exploratorio</li>
-                    <li>UAT</li>
-                    <li>Caja negra</li>
-                    <li>Cross-Browser</li>
-                    <li>Web</li>
-                    <li>Mobile</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>API / BACKEND</h3>
-                <ul>
-                    <li>Postman</li>
-                    <li>REST</li>
-                    <li>SOAP</li>
-                    <li>SoapUI</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>DATOS</h3>
-                <ul>
-                    <li>SQL Server</li>
-                    <li>Oracle</li>
-                    <li>MySQL</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>AUTOMATIZACIÓN</h3>
-                <ul>
-                    <li>Playwright</li>
-                    <li>Selenium WebDriver</li>
-                    <li>Python</li>
-                    <li>Cucumber</li>
-                    <li>Gherkin</li>
-                    <li>JavaScript/TypeScript básico</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>GESTIÓN</h3>
-                <ul>
-                    <li>Jira</li>
-                    <li>Xray</li>
-                    <li>Azure DevOps</li>
-                    <li>Mantis</li>
-                    <li>TestLink</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>HERRAMIENTAS</h3>
-                <ul>
-                    <li>BrowserStack</li>
-                    <li>Chrome DevTools</li>
-                    <li>Visual Studio Code</li>
-                    <li>DocTesting</li>
-                    <li>Remedy</li>
-                    <li>Salesforce</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>METODOLOGÍAS</h3>
-                <ul>
-                    <li>Agile</li>
-                    <li>Scrum</li>
-                </ul>
-            </div>
+    <!-- Sección Contacto -->
+    <section id="contacto" style="padding: 3rem 1rem; max-width: 1200px; margin: 0 auto; text-align: center;">
+        <h2 style="color: #00d4aa; border-bottom: 2px solid #333; padding-bottom: 0.5rem;">Contacto</h2>
+        <div style="max-width: 600px; margin: 2rem auto; color: #a0a0a0;">
+            <p>Email: <a href="mailto:adrian.m.rico85@gmail.com" style="color: #a0d4aa;">adrian.m.rico85@gmail.com</a></p>
+            <p>Teléfono: +54 9 11 3394 5326</p>
+            <p>Ubicación: Buenos Aires, Argentina</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/adrián-alfredo-martins-rico-a62b1476" style="color: #a0d4aa;" target="_blank">linkedin.com/in/adrián-alfredo-martins-rico-a62b1476</a></p>
         </div>
     </section>
 
-    <script src="main.js"></script>
+    <footer style="padding: 1rem; text-align: center; background: #0a0a0f; color: #666; font-size: 0.8rem;">
+        <p>Adrián Alfredo Martins Rico - QA Analyst | QA Functional Tester © 2024</p>
+    </footer>
+
 </body>
 </html>
